@@ -1,25 +1,22 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Menu from './components/Menu/Menu';
 import './styles/main.scss';
 
 function App() {
   return (
     <Router>
       <div className="app">
-        <header className="app-header">
-          <nav>
-            {/* Navigation à implémenter */}
-          </nav>
-        </header>
+        <Menu />
         <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-          </Routes>
+          <section id="accueil" className="hero">
+            <div className="hero__content">
+              <h1 className="hero__title">Construis une image à la hauteur de ton talent </h1>
+              <p className="hero__subtitle">L’agence de communication et de e-reputation pour les sportifs </p>
+              <a href="#contact" className="hero__cta">Découvre l’agence </a>
+            </div>
+          </section>
         </main>
-        <footer>
-          {/* Footer à implémenter */}
-        </footer>
       </div>
     </Router>
   );
