@@ -1,8 +1,15 @@
+// Import des polices
+@import './fonts';
+
 // Variables
-$primary-color: #007bff;
-$secondary-color: #6c757d;
+$primary-color: #0091BF;
+$secondary-color: #5000FF;
+$black-color: #000000;
 $background-color: #ffffff;
-$text-color: #333333;
+$text-color: $black-color;
+
+// Fonts
+$font-secondary: 'Poppins', sans-serif;
 
 // Reset et styles de base
 * {
@@ -12,7 +19,7 @@ $text-color: #333333;
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: $font-secondary;
   line-height: 1.6;
   color: $text-color;
   background-color: $background-color;
@@ -28,6 +35,7 @@ body {
   background-color: $primary-color;
   padding: 1rem;
   color: white;
+  font-family: $font-primary;
 }
 
 main {
@@ -40,6 +48,7 @@ footer {
   color: white;
   padding: 1rem;
   text-align: center;
+  font-family: $font-primary;
 }
 
 // Styles de la page d'accueil
@@ -48,13 +57,19 @@ footer {
   padding: 2rem;
   
   h1 {
+    font-family: $font-primary;
     color: $primary-color;
     margin-bottom: 1rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
   }
   
   p {
+    font-family: $font-secondary;
     font-size: 1.2rem;
-    color: $secondary-color;
+    color: $text-color;
+    max-width: 600px;
+    margin: 0 auto;
   }
 } 
