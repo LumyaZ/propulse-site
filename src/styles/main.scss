@@ -1,0 +1,60 @@
+// Variables
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$background-color: #ffffff;
+$text-color: #333333;
+
+// Reset et styles de base
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-header {
+  background-color: $primary-color;
+  padding: 1rem;
+  color: white;
+}
+
+main {
+  flex: 1;
+  padding: 2rem;
+}
+
+footer {
+  background-color: $secondary-color;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+// Styles de la page d'accueil
+.home {
+  text-align: center;
+  padding: 2rem;
+  
+  h1 {
+    color: $primary-color;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: $secondary-color;
+  }
+} 
