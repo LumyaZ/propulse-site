@@ -4,6 +4,7 @@ import Menu from './components/Menu/Menu';
 import Agency from './components/Agency/Agency';
 import Vision from './components/Vision/Vision';
 import VisionServices from './components/VisionServices/VisionServices';
+import Team from './components/Team/Team';
 import './styles/main.scss';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Agency />
           <Vision />
           <VisionServices />
+          <Team />
         </main>
       </div>
     </Router>
