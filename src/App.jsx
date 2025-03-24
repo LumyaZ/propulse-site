@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Menu from './components/Menu/Menu';
 import Agency from './components/Agency/Agency';
+import Vision from './components/Vision/Vision';
 import './styles/main.scss';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             </div>
           </section>
           <Agency />
+          <Vision />
         </main>
       </div>
     </Router>

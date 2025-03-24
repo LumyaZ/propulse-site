@@ -1,0 +1,19 @@
+@import '../../styles/variables';
+
+.vision {
+  height: 33.333vh;
+  width: 100%;
+  background-color: $primary-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  &__text {
+    font-family: $font-primary;
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+} 
