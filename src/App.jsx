@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Menu from './components/Menu/Menu';
+import Agency from './components/Agency/Agency';
 import './styles/main.scss';
 
 function App() {
@@ -11,11 +12,12 @@ function App() {
         <main>
           <section id="accueil" className="hero">
             <div className="hero__content">
-              <h1 className="hero__title">Construis une image à la hauteur de ton talent </h1>
-              <p className="hero__subtitle">L’agence de communication et de e-reputation pour les sportifs </p>
-              <a href="#contact" className="hero__cta">Découvre l’agence </a>
+              <h1 className="hero__title">Propulse</h1>
+              <p className="hero__subtitle">Votre partenaire digital pour une présence en ligne exceptionnelle</p>
+              <a href="#contact" className="hero__cta">Contactez-nous</a>
             </div>
           </section>
+          <Agency />
         </main>
       </div>
     </Router>
