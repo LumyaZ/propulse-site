@@ -6,6 +6,7 @@ import Vision from './components/Vision/Vision';
 import VisionServices from './components/VisionServices/VisionServices';
 import Team from './components/Team/Team';
 import Process from './components/Process/Process';
+import Realisations from './components/Realisations/Realisations';
 import './styles/main.scss';
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <VisionServices />
           <Team />
           <Process />
+          <Realisations />
         </main>
       </div>
     </Router>
