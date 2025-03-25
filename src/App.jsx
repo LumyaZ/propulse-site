@@ -10,6 +10,9 @@ import Realisations from './components/Realisations/Realisations';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './styles/main.scss';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
@@ -17,13 +20,7 @@ function App() {
       <div className="app">
         <Menu />
         <main>
-          <section id="accueil" className="hero">
-            <div className="hero__content">
-              <h1 className="hero__title">Propulse</h1>
-              <p className="hero__subtitle">Votre partenaire digital pour une présence en ligne exceptionnelle</p>
-              <a href="#contact" className="hero__cta">Contactez-nous</a>
-            </div>
-          </section>
+          <Hero />
           <Agency />
           <Vision />
           <VisionServices />

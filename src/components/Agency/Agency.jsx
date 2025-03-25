@@ -6,10 +6,10 @@ const Agency = () => {
     <section id="agence" className="agency">
       <div className="agency__content">
         <div className="agency__text">
-          <h2 className="agency__title">L'agence</h2>
+          <h2 className="agency__title">L’agence Propulse</h2>
           <p className="agency__description">
-            Propulse est une agence créative spécialisée dans la création de sites web modernes et performants. 
-            Notre approche unique combine design innovant et technologies de pointe pour donner vie à vos projets digitaux.
+            Nous sommes  une agence spécialisée en e-réputation et communication pour les sportifs. Nous savons qu’aujourd’hui, ta carrière ne dépend pas seulement de tes performances sur le terrain, mais aussi de l’image que tu renvoies à l’extérieur.
+
           </p>
           <a href="#process" className="agency__cta">Découvrir notre process</a>
         </div>

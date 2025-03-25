@@ -82,15 +82,15 @@
     font-family: $font-secondary;
     font-size: 1rem;
     color: white;
-    background-color: $primary-color;
+    background-color: $secondary-color;
     border: none;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
+    padding: 1rem 2rem;
+    border-radius: 20px;
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
-      background-color: darken($primary-color, 10%);
+      background-color: darken($secondary-color, 10%);
       transform: translateY(-2px);
     }
   }
