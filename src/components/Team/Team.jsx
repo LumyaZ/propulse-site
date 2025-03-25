@@ -5,6 +5,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import './Team.scss';
+import amiImage from '../../assets/images/team/ami_site_internet.png';
+import alexisImage from '../../assets/images/team/alexis_site_internet.png';
+import antoineImage from '../../assets/images/team/antoine_site_internet.png';
+import axelImage from '../../assets/images/team/axel_site_internet.png';
+import jfImage from '../../assets/images/team/jf_site_internet.png';
+import julesImage from '../../assets/images/team/jules_site_internet.png';
 
 const Team = () => {
   const teamMembers = [
@@ -12,40 +18,40 @@ const Team = () => {
       id: 1,
       name: 'Ami',
       role: 'Directeur Créatif',
-      image: '/images/team/ami_site_internet.png',
+      image: amiImage,
       objectPosition: 'center 0%'
     },
     {
       id: 2,
       name: 'Alexis',
       role: 'Designer UX/UI',
-      image: '/images/team/alexis_site_internet.png'
+      image: alexisImage
     },
     {
       id: 3,
       name: 'Antoine',
       role: 'Développeur Frontend',
-      image: '/images/team/antoine_site_internet.png',
+      image: antoineImage,
       objectPosition: 'center 30%'
     },
     {
       id: 4,
       name: 'Axel',
       role: 'Développeur Backend',
-      image: '/images/team/axel_site_internet.png',
+      image: axelImage,
       objectPosition: 'center 30%'
     },
     {
       id: 5,
       name: 'Jf',
       role: 'Chef de Projet',
-      image: '/images/team/jf_site_internet.png'
+      image: jfImage
     },
     {
       id: 6,
       name: 'Jules',
       role: 'Chef de Projet',
-      image: '/images/team/jules_site_internet.png'
+      image: julesImage
     }
   ];
 

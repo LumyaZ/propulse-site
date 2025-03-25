@@ -8,6 +8,7 @@ import Team from './components/Team/Team';
 import Process from './components/Process/Process';
 import Realisations from './components/Realisations/Realisations';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import './styles/main.scss';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Realisations />
           <Contact />
         </main>
+        <Footer />
       </div>
     </Router>
   );
