@@ -16,41 +16,41 @@ const Team = () => {
   const teamMembers = [
     {
       id: 1,
-      name: 'Ami',
-      role: 'Directeur Créatif',
+      name: 'Aminata',
+      role: 'Graphiste et chef de projet',
       image: amiImage,
       objectPosition: 'center 0%'
     },
     {
       id: 2,
       name: 'Alexis',
-      role: 'Designer UX/UI',
+      role: 'Commercial',
       image: alexisImage
     },
     {
       id: 3,
       name: 'Antoine',
-      role: 'Développeur Frontend',
+      role: 'Commercial',
       image: antoineImage,
       objectPosition: 'center 30%'
     },
     {
       id: 4,
       name: 'Axel',
-      role: 'Développeur Backend',
+      role: 'Responsable audiovisuel',
       image: axelImage,
       objectPosition: 'center 30%'
     },
     {
       id: 5,
-      name: 'Jf',
-      role: 'Chef de Projet',
+      name: 'Jean françois',
+      role: 'Community manager',
       image: jfImage
     },
     {
       id: 6,
       name: 'Jules',
-      role: 'Chef de Projet',
+      role: 'Community manager',
       image: julesImage
     }
   ];

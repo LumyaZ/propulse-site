@@ -10,23 +10,23 @@ const Process = () => {
   const steps = [
     {
       number: '1',
-      text: 'Établir un premier contact'
+      text: 'Prise de contact avec le joueur'
     },
     {
       number: '2',
-      text: 'Visio conférence'
+      text: 'RDV stratégique'
     },
     {
       number: '3',
-      text: 'Phase de test'
+      text: 'Mise en place de la stratégie'
     },
     {
       number: '4',
-      text: 'Optimisation continue des performances'
+      text: 'Ajustement du contenu'
     },
     {
       number: '5',
-      text: 'Mesure et analyse des résultats'
+      text: 'Rendu des livrables'
     }
   ];
 

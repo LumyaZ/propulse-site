@@ -14,7 +14,7 @@
   }
 
   &__text {
-    flex: 1;
+    flex: 0 0 40%;
     padding: 4rem;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@
   }
 
   &__image {
-    flex: 1;
+    flex: 0 0 60%;
     position: relative;
     overflow: hidden;
 
@@ -106,8 +106,7 @@
     }
 
     &__image {
-      height: 50vh;
-      order: 1;
+      display: none;
     }
 
     &__image-item {

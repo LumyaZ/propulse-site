@@ -51,6 +51,8 @@ const Menu = () => {
         <span></span>
       </button>
 
+      <div className={`menu__overlay ${isOpen ? 'open' : ''}`} onClick={toggleMenu}></div>
+
       <ul className={`menu__items ${isOpen ? 'open' : ''}`}>
         <li><a href="#accueil" onClick={(e) => handleLinkClick(e, 'accueil')}>Accueil</a></li>
         <li><a href="#agence" onClick={(e) => handleLinkClick(e, 'agence')}>L'agence</a></li>
