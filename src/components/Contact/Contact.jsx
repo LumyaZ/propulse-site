@@ -1,7 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import './Contact.scss';
 
 const Contact = () => {
+  useEffect(() => {
+    // Initialiser EmailJS avec votre clé publique
+    emailjs.init('OMFrf84GFrC1C7-BT');
+  }, []);
+
   const [status, setStatus] = useState({
     submitting: false,
     submitted: false,
@@ -28,19 +34,18 @@ const Contact = () => {
     setStatus({ submitting: true, submitted: false, error: null });
 
     try {
-      const response = await fetch('http://localhost:5000/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      await emailjs.send(
+        'service_ku8nqib',
+        'template_y7j7n7o',
+        {
+          name: formData.name,
+          email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+          time: new Date().toLocaleString('fr-FR'),
         },
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || 'Une erreur est survenue');
-      }
+        'OMFrf84GFrC1C7-BT'
+      );
 
       setStatus({
         submitting: false,
@@ -63,7 +68,7 @@ const Contact = () => {
       setStatus({
         submitting: false,
         submitted: false,
-        error: error.message
+        error: 'Une erreur est survenue lors de l\'envoi du message. Veuillez réessayer.'
       });
     }
   };
