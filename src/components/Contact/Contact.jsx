@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import './Contact.scss';
 
 const Contact = () => {
+  useEffect(() => {
+    // Initialiser EmailJS avec votre clé publique
+    emailjs.init('OMFrf84GFrC1C7-BT');
+  }, []);
+
   const [status, setStatus] = useState({
     submitting: false,
     submitted: false,
@@ -33,10 +38,11 @@ const Contact = () => {
         'service_ku8nqib',
         'template_y7j7n7o',
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           subject: formData.subject,
           message: formData.message,
+          time: new Date().toLocaleString('fr-FR'),
         },
         'OMFrf84GFrC1C7-BT'
       );
