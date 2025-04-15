@@ -1,6 +1,5 @@
 // Import des variables et polices
 @import './variables';
-@import './fonts';
 
 // Variables
 $primary-color: #0091BF;
@@ -10,6 +9,7 @@ $background-color: #ffffff;
 $text-color: $black-color;
 
 // Fonts
+$font-primary: 'MORTEND', 'Impact', 'Arial Black', sans-serif;
 $font-secondary: 'Poppins', sans-serif;
 
 // Reset et styles de base

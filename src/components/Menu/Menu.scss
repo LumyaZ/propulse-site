@@ -82,7 +82,7 @@
   }
 
   &--scrolled {
-    background-color: $primary-color;
+    background-color: $black-color;
   }
 
   &__items.open {
@@ -119,7 +119,7 @@
       right: -60%;
       height: 100vh;
       width: 60%;
-      background-color: $primary-color;
+      background-color: #0066cc;
       flex-direction: column;
       justify-content: center;
       align-items: center;

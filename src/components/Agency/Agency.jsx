@@ -8,7 +8,8 @@ import image5 from '../../assets/images/agency/logan-weaver-lgnwvr-jHJnzxXFxrw-u
 import image6 from '../../assets/images/agency/jack-monach-5gcM189YA7o-unsplash.jpg';
 import image7 from '../../assets/images/agency/ben-weber-r-krWscXjvQ-unsplash.jpg';
 import image8 from '../../assets/images/agency/colin-lloyd-QyLJpC8rChY-unsplash.jpg'; 
-
+import image9 from '../../assets/images/agency/connor-coyne-OgqWLzWRSaI-unsplash.jpg'; 
+import image10 from '../../assets/images/agency/august-phlieger-CREqtqgBFcU-unsplash.jpg'; 
 
 const images = [
   image1,
@@ -18,7 +19,9 @@ const images = [
   image5,
   image6,
   image7,
-  image8
+  image8,
+  image9,
+  image10
 ];
 
 const Agency = () => {
