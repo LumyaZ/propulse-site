@@ -12,8 +12,7 @@ const Menu = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroHeight = document.getElementById('accueil').offsetHeight;
-      setScrolled(window.scrollY > heroHeight);
+      setScrolled(window.scrollY > 0);
     };
 
     window.addEventListener('scroll', handleScroll);
