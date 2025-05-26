@@ -17,3 +17,15 @@
     letter-spacing: 2px;
   }
 } 
+
+@media (max-width: $mobile) {
+  .vision {
+    &__text {
+      font-family: $font-primary;
+      font-size: 1.2rem;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+} 

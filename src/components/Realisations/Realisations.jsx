@@ -1,25 +1,28 @@
 import React from 'react';
 import './Realisations.scss';
-
+import marwanImage from './../../assets/images/realisations/marwann_v2.jpg';
+import kevinImage from './../../assets/images/realisations/vinke_4.jpg';
+import vinkeVideo from './../../assets/images/realisations/vinke_v2.mp4';
 const Realisations = () => {
   const projects = [
     {
       id: 1,
       name: "Marwan benhamou",
-      role: "Community management",
-      description: "Création d'affiche avant match",
-      image: "/images/realisations/marwan.jpg",
-      isReversed: false
+      role: "",
+      description: "",
+      image: marwanImage,
+      isReversed: false,
+      video: ""
     },
     {
       id: 2,
-      name: "John Doe",
-      role: "Social Media Manager",
-      description: "Gestion des réseaux sociaux et création de contenu",
-      image: "/images/realisations/john.jpg",
-      isReversed: true
+      name: "kevin dedji",  
+      role: "",
+      description: "",
+      image: kevinImage,
+      isReversed: true,
+      video: vinkeVideo
     },
-    // Vous pouvez facilement ajouter d'autres projets ici
   ];
 
   return (
@@ -37,12 +40,22 @@ const Realisations = () => {
                 alt={project.name} 
                 className="realisations__image"
               />
+              
             </div>
             <div className="realisations__content">
               <h3 className="realisations__name">{project.name}</h3>
               <p className="realisations__role">{project.role}</p>
               <p className="realisations__description">{project.description}</p>
               <button className="realisations__button">En savoir plus</button>
+              {project.video && (
+                <video 
+                  className="realisations__video"
+                  controls
+                  playsInline
+                >
+                  <source src={project.video} type="video/mp4" />
+                </video>
+              )}
             </div>
           </div>
         ))}
